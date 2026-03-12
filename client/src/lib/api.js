@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 
-const API_BASE = '/api'
+const API_BASE = 'https://triggerly-api.onrender.com/api'
 
 async function getAuthHeaders() {
   const { data: { session } } = await supabase.auth.getSession()
