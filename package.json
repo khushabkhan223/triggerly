@@ -1,0 +1,16 @@
+{
+  "name": "triggerly",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\" \"npm run dev:worker\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:worker": "cd worker && npm run dev",
+    "install:all": "cd client && npm install && cd ../server && npm install && cd ../worker && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
