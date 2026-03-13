@@ -14,6 +14,18 @@ import { checkDomainAvailability } from './sources/domains.js'
 import { fetchProductPrices } from './sources/products.js'
 import { evaluateTriggers } from './evaluator.js'
 import { sendAlertEmail } from './notifier.js'
+import express from "express";
+
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+app.get("/", (req, res) => {
+  res.send("Triggerly worker running");
+});
+
+app.listen(PORT, () => {
+  console.log(`Worker health server running on port ${PORT}`);
+});
 
 const POLL_INTERVAL = 30_000 // 30 seconds
 const MAX_TRIGGERS_PER_CYCLE = 1000
