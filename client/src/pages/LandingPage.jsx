@@ -63,6 +63,26 @@ export default function LandingPage() {
             <a href="#how-it-works" className="btn-ghost">See How It Works</a>
           </div>
 
+          {/* Demo Access Banner */}
+          <div className="reveal reveal-delay-4 inline-flex flex-col sm:flex-row items-center gap-3 px-5 py-3 rounded-2xl border border-neon-green/20 bg-neon-green/[0.04] backdrop-blur-sm mb-10">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse flex-shrink-0" />
+              <span className="text-xs font-semibold text-neon-green uppercase tracking-wider">Quick Demo Access</span>
+            </div>
+            <div className="w-px h-4 bg-white/10 hidden sm:block" />
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs text-gray-400">
+              <span>
+                <span className="text-gray-500">Email: </span>
+                <span className="font-mono text-gray-200 select-all">khushabkhan223@gmail.com</span>
+              </span>
+              <span className="text-gray-600 hidden sm:block">·</span>
+              <span>
+                <span className="text-gray-500">Pass: </span>
+                <span className="font-mono text-gray-200 select-all">Triggerly_pass731</span>
+              </span>
+            </div>
+          </div>
+
           {/* Prompt Box */}
           <div className="reveal reveal-delay-4 prompt-box">
             <div className="prompt-box-inner">
